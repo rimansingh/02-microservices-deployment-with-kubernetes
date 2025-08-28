@@ -1,4 +1,4 @@
-// Learn With KASTRO - Main JavaScript File
+// Learn With Riman - Main JavaScript File
 
 document.addEventListener("DOMContentLoaded", function () {
     // Mobile menu toggle
@@ -109,6 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Console welcome message
-    console.log("🚀 Welcome to Learn With KASTRO!");
-    console.log("Ready to master DevOps? Check out our training programs!");
+    console.log("🚀 Welcome to Learn With Riman!");
+    console.log("Ready to master DevOps? Check out our programs!");
 });
