@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: techsolutions
-        image: riman/techsolutions-app:latest
+        image: kastrov/techsolutions-app:latest
         ports:
         - containerPort: 80
         resources:

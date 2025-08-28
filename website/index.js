@@ -1,16 +1,7 @@
-// Learn With Riman - Main JavaScript File
+// Learn With RIman - Main JavaScript File
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Mobile menu toggle
-    const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-    const navMenu = document.querySelector(".nav-menu");
 
-    if (mobileMenuBtn && navMenu) {
-        mobileMenuBtn.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
-            mobileMenuBtn.classList.toggle("active");
-        });
-    }
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -62,17 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Navbar scroll effect
-    const navbar = document.querySelector(".navbar");
-    if (navbar) {
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 100) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-    }
+
+
+
+
+
 
     // Intersection Observer for animations
     const observerOptions = {
@@ -109,6 +94,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Console welcome message
-    console.log("🚀 Welcome to Learn With Riman!");
-    console.log("Ready to master DevOps? Check out our programs!");
+    console.log("🚀 Welcome to Learn With RIman!");
+    console.log("Ready to master DevOps? Check out our training programs!");
+
+    // Back to Top Button functionality
+    const backToTopBtn = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    backToTopBtn.addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
 });

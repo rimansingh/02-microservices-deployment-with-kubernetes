@@ -1,10 +1,10 @@
-DevOps Project
+ 														DevOps Project
 
  								**Deployment of Microservices Application using Ingress Controller**
 
  														   *by*
 
-===================          **Riman Singh**
+=================== 										 			**Kastro Kiran V**
 Step 1: Basic Setup
 ===================
 1.1. Push the code from Local to Remote
@@ -19,7 +19,7 @@ Select at least:
  	Copy the token (you won't be able to see it again!)
 
 🔁 Update Git credentials:
-git remote set-url origin https://<your_username>:<your_token>@github.com/RimanSingh/microservices-ingress-riman.git
+git remote set-url origin https://<your\_username>:<your\_token>@github.com/KastroVKiran/microservices-ingress-kastro.git
 
 ✅ Push the code
 git push -u origin master
@@ -173,7 +173,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 
 4.7. Create EKS Cluster
-eksctl create cluster --name riman-cluster --region us-east-1 --node-type t2.medium --zones us-east-1a,us-east-1b
+eksctl create cluster --name kastro-cluster --region us-east-1 --node-type t2.medium --zones us-east-1a,us-east-1b
 
 4.8. Modifying the permissions
 sudo usermod -aG docker jenkins
@@ -190,7 +190,7 @@ kubectl get pods -n ingress-nginx
 kubectl get svc ingress-nginx-controller -n ingress-nginx
 
 4.10. To delete the cluster (Optional)
-eksctl delete cluster --name riman-cluster --region us-east-1
+eksctl delete cluster --name kastro-cluster --region us-east-1
 
 ================================
 Step 5: Creation of Jenkins Job
